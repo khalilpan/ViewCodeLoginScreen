@@ -12,8 +12,8 @@ class LoginController: UIViewController {
 
     override func loadView() {
         
-//        loginScreen.loginAction = loginPressed
-//        loginScreen.signUpAction = signUpPressed
+        loginScreen.loginAction = loginPressed
+        loginScreen.signUpAction = signUpPressed
         view = loginScreen
         
         
@@ -30,11 +30,11 @@ class LoginController: UIViewController {
     }
     
     //handle button presses
-//    func loginPressed() {
-//        print("Login Button Clicked.")
-//    }
-//    
-//    func signUpPressed() {
-//        print("Sign Up Button Clicked.")
-//    }
+    func loginPressed() {
+        print("Login Button Clicked.")
+    }
+    
+    func signUpPressed() {
+        print("Sign Up Button Clicked.")
+    }
 }

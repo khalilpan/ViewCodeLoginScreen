@@ -9,8 +9,8 @@ import UIKit
 
 class LoginView: UIView {
     
-//    var loginAction: (() -> Void)?
-//    var signUpAction: (() -> Void)?
+    var loginAction: (() -> Void)?
+    var signUpAction: (() -> Void)?
 
     lazy var backgroundImage: UIImageView = {
         let view = UIImageView(frame: .zero)
@@ -52,7 +52,7 @@ class LoginView: UIView {
         view.layer.cornerRadius = 5
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor(red: 80/255, green: 227/255, blue: 194/255, alpha: 1).cgColor
-//        view.addTarget(self, action: #selector(loginHandler), for: .touchUpInside)
+        view.addTarget(self, action: #selector(loginHandler), for: .touchUpInside)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -63,7 +63,7 @@ class LoginView: UIView {
         view.layer.cornerRadius = 5
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor(red: 80/255, green: 227/255, blue: 194/255, alpha: 1).cgColor
-//        view.addTarget(self, action: #selector(signUpHandler), for: .touchUpInside)
+        view.addTarget(self, action: #selector(signUpHandler), for: .touchUpInside)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -89,13 +89,13 @@ class LoginView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-//    @objc func loginHandler() {
-//        loginAction?()
-//    }
-//
-//    @objc func signUpHandler() {
-//        signUpAction?()
-//    }
+    @objc func loginHandler() {
+        loginAction?()
+    }
+
+    @objc func signUpHandler() {
+        signUpAction?()
+    }
     
 }
 
