@@ -113,17 +113,20 @@ extension LoginView: CodeView {
     }
     
     func setupConstraints() {
+        var constraints = [NSLayoutConstraint]()
+                
+        constraints.append(backgroundImage.leadingAnchor.constraint(equalTo: leadingAnchor))
+        constraints.append(backgroundImage.topAnchor.constraint(equalTo: topAnchor))
+        constraints.append(backgroundImage.rightAnchor.constraint(equalTo: rightAnchor))
+        constraints.append(backgroundImage.bottomAnchor.constraint(equalTo: bottomAnchor))
         
-        backgroundImage.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        backgroundImage.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        backgroundImage.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
-        backgroundImage.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        constraints.append(mainContainer.centerXAnchor.constraint(equalTo: self.centerXAnchor))
+        constraints.append(mainContainer.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -100))
         
-        mainContainer.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        mainContainer.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -100).isActive = true
+        constraints.append(mainContainer.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.7))
+        constraints.append(mainContainer.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2))
         
-        mainContainer.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.7).isActive = true
-        mainContainer.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2).isActive = true
+        NSLayoutConstraint.activate(constraints)
     }
     
     func setupAddicionalConfiguration() {
