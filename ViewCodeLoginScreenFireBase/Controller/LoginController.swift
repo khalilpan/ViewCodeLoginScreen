@@ -12,7 +12,11 @@ class LoginController: UIViewController {
 
     override func loadView() {
         
+//        loginScreen.loginAction = loginPressed
+//        loginScreen.signUpAction = signUpPressed
         view = loginScreen
+        
+        
     }
 
     override func viewDidLoad() {
@@ -24,4 +28,13 @@ class LoginController: UIViewController {
         
 //        navigationController?.navigationBar.isHidden = false
     }
+    
+    //handle button presses
+//    func loginPressed() {
+//        print("Login Button Clicked.")
+//    }
+//    
+//    func signUpPressed() {
+//        print("Sign Up Button Clicked.")
+//    }
 }
