@@ -14,6 +14,8 @@
 		E479C5CC2732B989002ED3C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E479C5CA2732B989002ED3C4 /* LaunchScreen.storyboard */; };
 		E479C5D72732B989002ED3C4 /* ViewCodeLoginScreenFireBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479C5D62732B989002ED3C4 /* ViewCodeLoginScreenFireBaseTests.swift */; };
 		E479C5E22732B98A002ED3C4 /* ViewCodeLoginScreenFireBaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479C5E12732B98A002ED3C4 /* ViewCodeLoginScreenFireBaseUITests.swift */; };
+		E479C5FA2732BB91002ED3C4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479C5F92732BB91002ED3C4 /* LoginView.swift */; };
+		E479C5FF2732BD4A002ED3C4 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479C5FE2732BD4A002ED3C4 /* CodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E479C5DD2732B98A002ED3C4 /* ViewCodeLoginScreenFireBaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewCodeLoginScreenFireBaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E479C5E12732B98A002ED3C4 /* ViewCodeLoginScreenFireBaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeLoginScreenFireBaseUITests.swift; sourceTree = "<group>"; };
 		E479C5E32732B98A002ED3C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E479C5F92732BB91002ED3C4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E479C5FE2732BD4A002ED3C4 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,11 @@
 		E479C5BE2732B987002ED3C4 /* ViewCodeLoginScreenFireBase */ = {
 			isa = PBXGroup;
 			children = (
+				E4DE347F2732C9EB00FA0E46 /* Model */,
+				E479C5F82732BB77002ED3C4 /* View */,
+				E479C6032732BDD1002ED3C4 /* Controller */,
 				E479C5BF2732B987002ED3C4 /* AppDelegate.swift */,
 				E479C5C12732B987002ED3C4 /* SceneDelegate.swift */,
-				E479C5C32732B987002ED3C4 /* LoginController.swift */,
 				E479C5C82732B989002ED3C4 /* Assets.xcassets */,
 				E479C5CA2732B989002ED3C4 /* LaunchScreen.storyboard */,
 				E479C5CD2732B989002ED3C4 /* Info.plist */,
@@ -123,6 +129,30 @@
 				E479C5E32732B98A002ED3C4 /* Info.plist */,
 			);
 			path = ViewCodeLoginScreenFireBaseUITests;
+			sourceTree = "<group>";
+		};
+		E479C5F82732BB77002ED3C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E479C5F92732BB91002ED3C4 /* LoginView.swift */,
+				E479C5FE2732BD4A002ED3C4 /* CodeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E479C6032732BDD1002ED3C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E479C5C32732B987002ED3C4 /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4DE347F2732C9EB00FA0E46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +286,8 @@
 			files = (
 				E479C5C42732B987002ED3C4 /* LoginController.swift in Sources */,
 				E479C5C02732B987002ED3C4 /* AppDelegate.swift in Sources */,
+				E479C5FA2732BB91002ED3C4 /* LoginView.swift in Sources */,
+				E479C5FF2732BD4A002ED3C4 /* CodeView.swift in Sources */,
 				E479C5C22732B987002ED3C4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
